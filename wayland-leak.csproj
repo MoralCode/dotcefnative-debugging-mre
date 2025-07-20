@@ -7,5 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\JustCef\DotCef.csproj" />
+  </ItemGroup>
 
 </Project>
