@@ -6,9 +6,12 @@
     <RootNamespace>wayland_leak</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>    
+
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include=".\JustCef\DotCef.csproj" />
+    <ProjectReference Include="..\JustCef\DotCef.csproj" />
   </ItemGroup>
 
 </Project>
