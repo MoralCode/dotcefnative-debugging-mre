@@ -1,9 +1,7 @@
-﻿using System;
-
-
-namespace Test {
+﻿class Program
+{
 	
-	private static async Task Main(string[] args)
+	static async Task Main(string[] args)
 	{
 		using var cef = new DotCefProcess();
 		cef.OutputDataReceived += (msg) =>
