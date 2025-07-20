@@ -26,7 +26,7 @@ class Program
 			(int)(1000),
 			(int)(1000),
 			(int)(1000), title: "test", developerToolsEnabled: true, proxyRequests: false, modifyRequests: false, modifyRequestBody: false, logConsole: true, resizable: true);
-		await window.LoadUrlAsync("https://www.google.com");
+		await window.LoadUrlAsync("https://fast.com");
 		await window.WaitForExitAsync();
 	}
 
