@@ -19,7 +19,10 @@ class Program
 		// 		return;
 		// 	Console.WriteLine(msg);
 		// };
-		cef.Start("--disable-web-security --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations --use-alloy-style --user-data-dir=./chromium-data-dir --log-file=cef.log --no-sandbox");
+		string extraArgs = string.Join(" ", args);
+
+		cef.Start($"--disable-web-security --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations --use-alloy-style --user-data-dir=./chromium-data-dir --log-file=cef.log --no-sandbox {extraArgs}");
+
 		var targetUrl = "https://google.com";
 		var window = await cef.CreateWindowAsync(
 			targetUrl,
