@@ -19,7 +19,7 @@ class Program
 		// 		return;
 		// 	Console.WriteLine(msg);
 		// };
-		cef.Start("--disable-web-security");
+		cef.Start("--disable-web-security --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations --use-alloy-style --user-data-dir=./chromium-data-dir --log-file=cef.log --no-sandbox");
 		var window = await cef.CreateWindowAsync(
 			"https://fast.com",
 			(int)(1000),
